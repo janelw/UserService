@@ -1,0 +1,9 @@
+language: java 
+jdk: 
+    - openjdk12
+before_install:
+    - mvn validate 
+    - mvn clean install 
+    - mvn compile
+after_success:
+- mvn coveralls:report
