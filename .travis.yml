@@ -1,5 +1,12 @@
 language: java 
 jdk: 
     - openjdk12
+before_install:
+    - mvn clean install
+    - mvn compile
+install:
+    - "mvn -N io.takari:maven:wrapper"
+script: 
+    - mvn verify
 after_success:
-- mvn coveralls:report
+    - mvn coveralls:report
