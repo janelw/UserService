@@ -1,0 +1,8 @@
+com\infosys\repository\UserRepository.class
+com\infosys\App.class
+com\infosys\services\Roleservice.class
+com\infosys\repository\RoleRepository.class
+com\infosys\controller\UserController.class
+com\infosys\services\Userservice.class
+com\infosys\model\Role.class
+com\infosys\model\User.class
